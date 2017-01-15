@@ -16,9 +16,9 @@
             android:name="com.uic.sarthak_marathe.music_audio_server.Music_Player"
             android:enabled="true"
             android:exported="true"
-            android:permission="com.uic.sarthak_marathe.project_5_audio_server.PLAYER_ID">
+            android:permission="com.uic.sarthak_marathe.music_audio_server.PLAYER_ID">
             <intent-filter>
-                <action android:name="com.uic.sarthak_marathe.project_5_audioplayer_common.AudioPlayerControls"/>
+                <action android:name="com.uic.sarthak_marathe.audioplayer_common.AudioPlayerControls"/>
             </intent-filter>
         </service>
     </application>

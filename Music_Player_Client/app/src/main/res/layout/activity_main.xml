@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uic.sarthak_marathe.music_player_client.MainActivity">
+
+    <Button
+        android:text="@string/pause"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pause"
+        android:layout_width="130dp" />
+
+    <Button
+        android:text="@string/stop"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/pause"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/stop"
+        android:layout_width="130dp" />
+
+    <Button
+        android:text="@string/resume"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/pause"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/resume"
+        android:layout_width="130dp" />
+
+    <TextView
+        android:text="@string/song_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/song_title"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:background="@color/maroon"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/song_listview"
+        android:layout_below="@+id/song_title"
+        android:layout_alignParentStart="true"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:text="User Activity"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/song_listview"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/track_request"
+        android:gravity="center"
+        android:background="@color/maroon"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/request_listview"
+        android:layout_below="@+id/track_request"
+        android:layout_above="@+id/start" />
+
+    <Button
+        android:text="@string/start"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/start"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Material.Light.Button.Toggle" />
+
+</RelativeLayout>
