@@ -1,4 +1,4 @@
-	# Android Music Player
+# Android Music Player
 Code for an Android Studio Project to implement a Music Player application with a seperate server and client side system.
 
 Server side code starts a service which provides an interface through AIDL(Android Interface Definition Language) to facilitate communication between server and client. On connection, the server returns an IBinder object to the client which is then used to access the methods present . Server defines the methods inside abstract subclass Stub of the AIDL interface. 
